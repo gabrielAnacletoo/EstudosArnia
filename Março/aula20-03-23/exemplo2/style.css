@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+  }
+  
+  #container {
+    display: inline-block;
+    margin-top: 1em;
+  }
+  
+  #card {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    justify-content: center;
+  }
+  
+  #card > div {
+    margin-bottom: 0.6em;
+  }
+  
+  

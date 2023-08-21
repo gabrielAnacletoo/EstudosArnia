@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listar atributos</title>
+    <style>
+        #btn {
+            border-radius: 12px;
+            font-weight: bold;
+            padding: 5px 20px 5px 20px;
+            cursor: pointer;
+            background-image: linear-gradient(to bottom, #00bfff, #1e90ff);
+        }
+    </style>
+    <script>
+        function listarAtributos() {
+            let parag = document.getElementById('firstParagraph'); // pegou id 
+            let atributos = parag.attributes; // pegou todos atributos
+            let result = ""                   //variavel vazia
+            //loop for in  para percorrer a variavel atributos
+            //percorre o objeto e extrai as informações de cada atributo.
+            for (let todosAtributos in atributos) {
+                result += `${todosAtributos} <br>}`
+            }
+            document.getElementById('resultado').innerHTML = result;
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <p id="firstParagraph">Iremos exibir os atributos deste paragrafo.</p>
+        <button id="btn" onclick="listarAtributos()">Listar Atributos</button>
+        <div id="resultado"></divs>
+    </div>
+
+</body>
+</html>

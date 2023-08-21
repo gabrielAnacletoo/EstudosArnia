@@ -1,0 +1,20 @@
+o jogador deve clicar em explorar
+se ele estiver em dungeon, pode se perder e voltar para o inicio
+ou encontrar novos monstros
+
+
+aumentar niveis de atack e defesa de acordo com 
+nivel do player
+
+ex: nivel ultimate atack: 25
+´nivel begner atack: 10
+
+
+menu login
+selecionar nome ,sexo ,classe
+classes: mago,thief,berseker,archer;
+
+adicionar pets e joias 
+pegar e soltar itens 
+poções e scrolls 
+habilidades magicas ??

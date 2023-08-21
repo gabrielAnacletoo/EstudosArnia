@@ -1,0 +1,43 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "carros": [
+    {
+      "id": "",
+      "Marca": "",
+      "Modelo": "",
+      "Cor": "",
+      "Combustivel": "",
+      "FotoURL": ""
+    },
+    {
+      "id": "jyj34FG",
+      "Marca": "Toyota",
+      "Modelo": "Corola Cross",
+      "Cor": "Branco",
+      "Combustivel": "Flex",
+      "FotoURL": "https://uploads.vrum.com.br/2022/06/Toyota-Corolla-Cross-Hybrid-branco-frente-modelo-2021-2-741x417.jpg"
+    },
+    {
+      "id": "aNGowBD",
+      "Marca": "Dodge ",
+      "Modelo": "RAM",
+      "Cor": "Vermelha",
+      "Combustivel": "Gasolina",
+      "FotoURL": "https://quatrorodas.abril.com.br/wp-content/uploads/2019/02/ram-1500-rebel-v8-hemi-2-e1550251973868.jpg?quality=70&strip=info"
+    },
+    {
+      "id": "CLKkid2",
+      "Marca": "Volkswagem",
+      "Modelo": "Jetta",
+      "Cor": "Preto",
+      "Combustivel": "Gasolina",
+      "FotoURL": "https://quatrorodas.abril.com.br/wp-content/uploads/2019/06/i5a9891.cr2_-e1573742855869.jpg?quality=70&strip=info"
+    }
+  ]
+}

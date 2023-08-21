@@ -1,0 +1,43 @@
+<!-- Faça um botão de dark mode para o site. Escreva uma função javascript que aplica um
+inline-style no fundo da tela, trocando de branco para preto, e aplica um inline-style em
+todos os textos trocando-os de cinza para branco. Faça a função de uma forma que se o
+estilo de dark mode estiver aplicado, o site troca para o tema normal, caso não esteja, ele
+ativa o dark mode. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Tema</title>
+    <style>
+        #mudartema {
+            border-radius: 10px;
+        }
+    </style>
+
+    <script>
+        function alterarTema() {
+            if (document.body.style.background === "black"){
+            document.body.style.background = "white"
+            document.getElementById('title').style.color = "black"
+            document.getElementById('textos').style.color = "black"
+            
+        } else {
+            document.body.style.background = "black"
+            document.getElementById('title').style.color = "white"
+            document.getElementById('textos').style.color = "White"
+        }
+    }
+    </script>
+</head>
+<body>
+    <button id="mudartema" onclick="alterarTema()">Alterar tema</button>
+    <h1 id="title">Title Text</h1>
+    <p id="textos">Lorem ipsum, dolor sit amet consectetur 
+        adipisicing elit. Neque possimus aliquid eum facere, nisi debitis sed excepturi, aperiam minus earum incidunt, dolor similique
+ officia. Quasi ducimus nulla repudiandae molestias excepturi.</p>
+
+</body>
+</html>

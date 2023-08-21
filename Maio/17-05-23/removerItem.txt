@@ -1,0 +1,10 @@
+
+     const handleCheckboxChange = (produto, isChecked) => {
+       let novoCarrinho;
+       if (isChecked) {
+         novoCarrinho = [...carrinho, produto]; // Adicionar produto ao carrinho
+      } else {
+        novoCarrinho = carrinho.filter((item) => item.id !== produto.id); // Remover produto do carrinho
+       }
+      setCarrinho(novoCarrinho);
+    }

@@ -1,0 +1,29 @@
+<!-- Faça uma página escrita Belo e com um botão que ao ser clicado faz com que troque
+Belo por Horizonte, sendo clicado novamente volta a escrever Belo e assim
+sucessivamente -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão - DOM</title>
+    <script>
+            function TrocarCidade() {
+                let texto = document.getElementById('change'); // pegou id
+                if (texto.innerHTML === "Belo") { // verifcando de variavel.innerHTML tem valor de belo dentro
+                    texto.innerHTML = "Belo Horizonte"; // se tiver troca por belo horizonte
+                } else {
+                    texto.innerHTML = "Belo" // caso nao , troque por belo
+                }
+            }
+        
+    </script>
+</head>
+<body>
+    <h1 id="change">Belo</h1>
+    <button onclick="TrocarCidade()">Alterar texto</button>
+    
+</body>
+</html>

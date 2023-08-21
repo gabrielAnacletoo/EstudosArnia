@@ -1,0 +1,92 @@
+{
+  "quiz": [
+    {
+      "id": "",
+      "Pergunta": "",
+      "alternativa1": "",
+      "alternativa2": "",
+      "alternativa3": "",
+      "alternativaCorreta": ""
+    },
+    {
+      "id": "0Mcushr",
+      "Pergunta": "Em que ano o brasil foi descoberto ?",
+      "alternativa1": "22 de Fevereiro de 1500",
+      "alternativa2": "13 de Julho de 1498",
+      "alternativa3": "1 de Janeiro de 1344",
+      "alternativaCorreta": "22 de Abril de 1500"
+    },
+    {
+      "id": "habxS1R",
+      "Pergunta": "Quanto Tempo dura o curso de desenvolvedor da Arnia?",
+      "alternativa1": "10 Meses",
+      "alternativa2": "11 Meses",
+      "alternativa3": "2 Anos",
+      "alternativaCorreta": "1 Ano"
+    },
+    {
+      "id": "nRYWR7-",
+      "Pergunta": " Qual a montanha mais alta do mundo?",
+      "alternativa1": "Mauna Kea",
+      "alternativa2": "Dhaulagiri",
+      "alternativa3": "Monte Chimborazo",
+      "alternativaCorreta": "Monte Everest"
+    },
+    {
+      "id": "BwIghgU",
+      "Pergunta": "Onde se localiza Machu Picchu?",
+      "alternativa1": "Colômbia",
+      "alternativa2": "Índia",
+      "alternativa3": "China",
+      "alternativaCorreta": "Peru"
+    },
+    {
+      "id": "r_TvJb7",
+      "Pergunta": "Que país tem o formato de uma bota?",
+      "alternativa1": "Butão",
+      "alternativa2": "Portugal",
+      "alternativa3": "México",
+      "alternativaCorreta": "Itália"
+    },
+    {
+      "id": "jKxMRhK",
+      "Pergunta": "Quanto tempo a Terra demora para dar uma volta completa em torno dela mesma?",
+      "alternativa1": "365 ou 366 dias",
+      "alternativa2": "365 dias",
+      "alternativa3": "7 dias",
+      "alternativaCorreta": "Aproximadamente 24 horas"
+    },
+    {
+      "id": "GWNTnU8",
+      "Pergunta": "Qual o maior planeta do sistema solar?",
+      "alternativa1": "Marte",
+      "alternativa2": "Lua",
+      "alternativa3": "Saturno",
+      "alternativaCorreta": "Jupiter"
+    },
+    {
+      "id": "NlIDwEG",
+      "Pergunta": "Quantos continentes existem?",
+      "alternativa1": "2",
+      "alternativa2": "8",
+      "alternativa3": "11",
+      "alternativaCorreta": "6"
+    },
+    {
+      "id": "1LDiT0-",
+      "Pergunta": "Qual a maior floresta tropical do mundo?",
+      "alternativa1": "Mata Atlântica",
+      "alternativa2": "Pampas",
+      "alternativa3": "Pantanal",
+      "alternativaCorreta": "Floresta Amazônica"
+    },
+    {
+      "id": "j6nz-7x",
+      "Pergunta": "Qual a maior floresta tropical do mundo?",
+      "alternativa1": "Mata Atlântica",
+      "alternativa2": "Pampas",
+      "alternativa3": "Pantanal",
+      "alternativaCorreta": "Floresta Amazônica"
+    }
+  ]
+}

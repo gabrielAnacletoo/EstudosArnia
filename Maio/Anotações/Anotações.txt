@@ -1,0 +1,11 @@
+type HttpMethod = 'GET | 'POST' | 'PUT' | 'DELETE'
+
+function makeRequest ( url: string, method: HttpMethod) {
+//...
+}
+let url 'www.api.com.br'
+const method = 'GET'
+
+makeRequest(url, as HttpMethod)
+
+

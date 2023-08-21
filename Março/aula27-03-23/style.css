@@ -1,0 +1,16 @@
+
+
+nav ul li a {
+    font-weight: 500 !important;
+    color: #FFF !important;
+}
+h5 img {
+    width: 20em;
+}
+div #content {
+    transition: transform 0.6s ease-out;
+  }
+  
+  div #content:hover {
+    transform: scale(1.3);
+  }

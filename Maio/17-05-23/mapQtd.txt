@@ -1,0 +1,9 @@
+produtos.map(item => {
+    if (item.prod === 'produto 1'){
+        return {
+            ...item,
+            qtd: item.qtd + 1
+        }
+    }
+    return item
+})

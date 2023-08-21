@@ -1,0 +1,37 @@
+{
+  "posts": [
+    {
+      "title": "Post Arnia",
+      "author": "Marketing Arnia",
+      "image": "https://cdn.izap.com.br/linkcom.com.br/plus/images?src=barbara/unnamed-1.jpg&",
+      "text": "Escola de Programação",
+      "id": 1
+    }
+  ],
+  "carros": [
+    {
+      "id": "0",
+      "nome": "",
+      "marca": "",
+      "aro": "",
+      "portas": "",
+      "combustivel": ""
+    },
+    {
+      "id": "2",
+      "nome": "Golf",
+      "marca": "Volkswagem",
+      "aro": "17",
+      "portas": "4",
+      "combustivel": "Flex"
+    },
+    {
+      "id": "1",
+      "nome": "Compass",
+      "marca": "Jeep",
+      "aro": "17",
+      "portas": "4",
+      "combustivel": "Diesel"
+    }
+  ]
+}
