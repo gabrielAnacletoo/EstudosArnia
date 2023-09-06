@@ -16,14 +16,17 @@ class UserService {
 
      const hashedPassword = Crypt.encrypt(data.password);
      data.password = hashedPassword;
-         return await this.repository.create(data)
+    return await this.repository.create(data)
      }
 
 
     async findAll(){
-        return this.repository.findAll();
+        return await this.repository.findAll();
     }
 
+    async ReserveService(checkin, checkout){
+        return await this.repository.createReserver(checkin, checkout);
+    }
 
 }
 export {UserService}

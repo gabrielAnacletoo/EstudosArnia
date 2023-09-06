@@ -1,0 +1,14 @@
+spyOn no jest é para observar um objeto
+const databasemock = []
+spyOn(databasemock, "find").mockReturnValue()
+o spy on vai ficar de olho na função find do databasemock
+
+
+const result = createUser(paramMock, databaseMock)
+
+expect(result).toEstrictEqual(expeted)
+
+toStrictEqual()
+
+
+
