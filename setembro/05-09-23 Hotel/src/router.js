@@ -17,8 +17,8 @@ const ReserveController = MakeReserve.getInstance()
 router.post("/register", userController.CreateController.bind(userController))
 //list all users
 router.get("/users", userController.findAll.bind(userController))
-//list user by id
-router.get("/users", userController.findAll.bind(userController))
+//list reserve by user id
+router.get("/users/:id", userController.findByReserversByid.bind(userController))
 //register hotel
 router.post("/hotel", HotelsController.CreateController.bind(HotelsController))
 //list all hotels
@@ -36,4 +36,5 @@ router.post("/login", authController.LoginController.bind(authController))
 router.use(AuthMiddleware.handler)
 //register reserve
 router.post("/reserve", ReserveController.ReserveController.bind(ReserveController))
+router.delete("/reserve/cancel/:ReserveId", ReserveController.CancelReserve.bind(ReserveController))
 export { router }

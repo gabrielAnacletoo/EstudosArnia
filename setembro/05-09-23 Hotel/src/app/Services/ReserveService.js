@@ -26,7 +26,7 @@ class ReserveServices {
             // Verifica se o hotel existe
             const hotel = await this.hotelRepository.findHotelById(hotelId);
             if (!hotel) {
-                return { error: 'Hotel não encontrado', status: 404 };
+                return { error: 'Hotel not found', status: 404 };
             }
 
             // Formate as datas para o formato correto
@@ -38,7 +38,7 @@ class ReserveServices {
 
             // Verifique se as datas estão no formato correto
             if (!checkinDate.isValid() || !checkoutDate.isValid()) {
-                return { error: 'A data deve estar no formato "YYYY-MM-DD"', status: 400 };
+                return { error: 'The date must be in the format "YYYY-MM-DD"', status: 400 };
             }
 
             // Verifique se o check-in é posterior ou igual à data atual
@@ -49,7 +49,7 @@ class ReserveServices {
                     hotel: hotelId,
                     checkin: checkinDate,
                     checkout: checkoutDate,
-                    status,
+                    status: 'ativada'
                 }
 
 
@@ -67,16 +67,54 @@ class ReserveServices {
 
                     return createdReserve;
                 } else {
-                    return { error: 'Falha ao criar reserva', status: 500 };
+                    return { error: 'Failed to book a room.', status: 500 };
                 }
             } else {
-                return { error: 'Data incorreta', status: 400 };
+                return { error: 'Wrong date', status: 400 };
             }
         } catch (error) {
             console.error('Error:', error);
-            return { error: 'Algo deu errado', status: 500 };
+            return { error: "Something's gone wrong", status: 500 };
         }
     }
+
+
+    async CancelReserveService(ReserveId) {
+        console.log('id reserve service - ' , ReserveId)
+
+        try {
+            // Encontre a reserva pelo ID
+            const reserve = await this.reserveRepository.findById(ReserveId);
+            // Verifica se a reserva existe
+            if (!reserve) {
+                return { error: 'Reserve not found', status: 404 };
+            }
+            if(reserve.status == 'cancelada'){
+                return {error: 'Esta reserva ja foi cancelada', status: 400}
+            }
+    
+            // Encontre o hotel  dessa reserva
+            const hotel = await this.hotelRepository.findHotelById(reserve.hotel);
+    
+            // Verifique se o hotel existe
+            if (!hotel) {
+                return { error: 'Hotel not found', status: 404 };
+            }
+    
+            hotel.roomsavailable += 1;
+            // Salve as alterações no hotel
+            await hotel.save();
+
+            reserve.status = 'cancelada';
+            await reserve.save(); // Salve o status da  reserva atualizada
+            
+    
+            return { message: 'booking successfully canceled' };
+        } catch (error) {
+            return { error: "Something's gone wrong", status: 500 };
+        }
+    }
+    
 }
 
 export { ReserveServices };

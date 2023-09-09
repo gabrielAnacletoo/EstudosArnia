@@ -1,32 +1,36 @@
 import { Crypt } from "../../utils/Crypt.js";
-import { Errors } from "../../utils/Errors.js";
 
 
 class UserService {
-    constructor(repository){
+    constructor(repository) {
         this.repository = repository
     }
 
-    //para criar é verificado se ja existe um usuario com esse email
-    async create(data){
-    const userAlreadyExists = await this.repository.findByEmail(data.email)
-    if(userAlreadyExists){
-        return {message: Errors.UserAlreadyExists}
-     }
+    async create(data) {
+        const userAlreadyExists = await this.repository.findByEmail(data.email)
+        if (userAlreadyExists) {
+            return { error: 'User Already Exists', status: 401 }
+        }
 
-     const hashedPassword = Crypt.encrypt(data.password);
-     data.password = hashedPassword;
-    return await this.repository.create(data)
-     }
+        const hashedPassword = Crypt.encrypt(data.password);
+        data.password = hashedPassword;
+        return await this.repository.create(data)
+    }
 
 
-    async findAll(){
+    async findAll() {
         return await this.repository.findAll();
     }
 
-    async ReserveService(checkin, checkout){
-        return await this.repository.createReserver(checkin, checkout);
+
+    async findByReserversByid(userId) {
+        const result = await this.repository.findByReserversByid(userId);
+        if (!result) {
+            return { error: 'User has no bookings', status: 404 };
+        }
+
+        return { message: "This user's bookings", reserves: result.reserves };
     }
 
 }
-export {UserService}
+export { UserService }

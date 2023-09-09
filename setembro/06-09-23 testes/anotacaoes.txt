@@ -3,12 +3,31 @@ const databasemock = []
 spyOn(databasemock, "find").mockReturnValue()
 o spy on vai ficar de olho na função find do databasemock
 
-
 const result = createUser(paramMock, databaseMock)
 
 expect(result).toEstrictEqual(expeted)
 
 toStrictEqual()
 
+stub,
+quando testamos uma função não nos importamos com as dependencias
+somente com a funcionalidade da função
+
+teste:
+describe("User", () => {
+  it("deve ser capaz de criar um usuário dado as infos corretas", () => {
+    // preparaçao
+    const paramMock = { name: "Victor", email: "a@b.com" }//objeto fake
+    const expected = [{ id: 123123, name: "Victor", email: "a@b.com" }] //expectativa é de receber um array com objeto 
+    const databaseMock = [] //banco de dados fake
+    jest.spyOn(Date, "now").mockReturnValue(123123)
+//spyone obersva date, na função now, e definimos o valor como 123123 manualmente
+    // execuçao
+    const result = createUser(paramMock, databaseMock)
+// aqui passamos os 2 parametros para createuser o objeto fake e o database fake
+    // validaçao
+    expect(result).toStrictEqual(expected)
+//aqui verificamos se resultado é stritamente igual ao expect
+  })
 
 

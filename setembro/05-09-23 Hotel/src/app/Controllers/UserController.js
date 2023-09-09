@@ -12,7 +12,7 @@ class UserController {
     const { body } = req
 
     const bodyIsValid = UserSchemaValidation.isValid(body)
-    if(bodyIsValid.error) {
+    if (bodyIsValid.error) {
       return res.status(400).json(bodyIsValid.error)
     }
 
@@ -22,17 +22,21 @@ class UserController {
     }
     return res.status(201).json(result)
   }
-  async Reserve(req, res) {
-    const { checkin, checkout } = req.body;
-    const result = await this.service.ReserveService(checkin, checkout);
-    res.json(result)
-  }
 
-  
   async findAll(req, res) {
     const result = await this.service.findAll()
     res.json(result)
   }
+
+  async findByReserversByid(req, res) {
+    const id = req.params.id;
+    const result = await this.service.findByReserversByid(id);
+    if('error' in result){
+      return res.status(400).json(result.error)
+    }
+    return res.status(200).json(result)
+  }
+
 }
 
 export { UserController }

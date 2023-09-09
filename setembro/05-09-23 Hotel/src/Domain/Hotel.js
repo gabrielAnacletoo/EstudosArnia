@@ -6,5 +6,5 @@ const HotelSchema = new mongoose.Schema({
   roomsavailable: {type: Number}
 }, {timestamps: true})
 
-const Hotel = mongoose.model("Hotels", HotelSchema);
+const Hotel = mongoose.model("Hotel", HotelSchema);
 export {Hotel}

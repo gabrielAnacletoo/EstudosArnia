@@ -1,0 +1,60 @@
+para testes  podemos usar o test.todo(" ")
+
+o que devemos testar na função? primeiro verificamos quantos returns a função tem
+
+
+no describe geralmente se coloca o nome da função a ser testada.
+
+o ideal é separar em 3 partes tudo que vamos testar 
+
+também podemos instanciar a service nos testes 
+porem com factorys mockadas ou seja factory fakes
+classes com funções dentro, e passamos para service original
+
+instanciando ex: new userservice(fakeRepository, fakeRepository2)
+
+também devemos prestão atenção pois as funções de repository são promisses
+
+entao o repository fake ficara 
+
+const userRepositoryFake = {
+create: (data) => Promise.resolve({})
+}
+
+ao definir a new service usamos o SUT (system under test)
+
+OS PASSOS SÃO:
+PREPARAÇÃO
+MOCK DO PARAMETRO
+STUB DO REPOSITORY FUNC. FINDBYEMAIL (STUB É UM RETORNO FAKE)
+
+no stub usando spyOn para observar o repository
+ex: jest.spyOn(userRepository, "findbByEmail") então vamos observar a função findbyemail dentro de user repository
+
+abaixo o stub
+.mockResolvedValue(true)//sempre que formos manipular o retorno de uma promisse usamos isso
+
+
+// as asserts
+
+expect(result).toStrictEqual(expect)
+
+AAA
+Arrange - Given - configuração
+Act - When - execução
+Assert - Then - validação
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

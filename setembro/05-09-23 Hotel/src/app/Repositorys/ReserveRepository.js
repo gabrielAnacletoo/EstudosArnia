@@ -6,20 +6,21 @@ class ReserveRepository {
     async CreateReserve(data) {
         return await this.model.create(data);
     }
-    async findById(id) {
-        return this.model.findById(id);
+    async findById(ReserveId) {
+        console.log('id no repository - ', ReserveId)
+        return await this.model.findById(ReserveId);
     }
 
     async findAll() {
-        return this.model.find();
+        return await this.model.find();
     }
 
     async update(id, data) {
-        return this.model.findByIdAndUpdate(id, data, { new: true });
+        return await this.model.findByIdAndUpdate(id, data, { new: true });
     }
 
     async delete(id) {
-        return this.model.findByIdAndDelete(id);
+        return await this.model.findByIdAndDelete(id);
     }
 }
 
