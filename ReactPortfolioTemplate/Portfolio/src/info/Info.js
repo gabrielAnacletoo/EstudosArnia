@@ -106,13 +106,7 @@ export const info = {
             source: "https://github.com/gabrielAnacletoo/ProjetoFinalModulo1", // this should be a link to the **repository** of the project, where the code is hosted.
             image: mock1
         },
-        {
-            title: "Wexer",
-            live: "https://projetofinalgabriel.vercel.app/index.html", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-            source: "https://github.com/gabrielAnacletoo/ProjetoFinalModulo1", // this should be a link to the **repository** of the project, where the code is hosted.
-            image: mock1
-        },
-      
+        
         // {
         //     title: "Project 4",
         //     live: "https://paytonpierce.dev",
