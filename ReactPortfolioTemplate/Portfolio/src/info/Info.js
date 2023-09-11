@@ -71,7 +71,7 @@ export const info = {
     bio: "Hello, my name is Gabriel. I'm a front-end developer. I studied 1 year of full stack development at Arnia.com.br, I like music, drawing and I believe that artificial intelligence will inevitably dominate all of us one day. You should hire me!",
     skills:
         {
-            proficientWith: ['javascript', 'Typescript', 'MongoDB', 'react', 'git', 'github', 'bootstrap', 'html5', 'css3', 'React Hooks', 'Styled components'],
+            proficientWith: ['Node.JS', 'MongoDB', 'Mongoose','javascript', 'Typescript', 'react', 'git', 'github', 'bootstrap', 'html5', 'css3', 'React Hooks', 'Styled components'],
             exposedTo: ['Java', 'C#']
         }
     ,
@@ -112,12 +112,12 @@ export const info = {
             source: "https://github.com/gabrielAnacletoo/projetow3erp",
             image: mock2
         },
-        // {
-        //     title: "Project 3",
-        //     live: "https://paytonpierce.dev",
-        //     source: "https://github.com/paytonjewell",
-        //     image: mock3
-        // },
+        {
+            title: "API de Hotel",
+            live: "#",
+            source: "https://github.com/gabrielAnacletoo/EstudosArnia/tree/main/setembro/05-09-23%20Hotel/src",
+            image: mock3
+        },
         // {
         //     title: "Project 4",
         //     live: "https://paytonpierce.dev",

@@ -20,15 +20,15 @@ class UserRepository {
         return this.user.find()
     }
 
-    async findByReserversByid(userId) {
+    async findByRentByid(userId) {
         const user = await this.user.findOne({ _id: userId }).populate({
-            path: 'reserve',
+            path: 'rents',
             populate: {
-                path: 'hotel',
-                model: 'Hotel' // Nome do modelo de Hotel
+                path: 'dealership',
+                model: 'dealerships' // Nome do modelo 
             }
         });
-        return { message: "This user's bookings", reserves: user.reserve };
+        return { message: "This user's rents", rents: user.rents };
 
     }
 }

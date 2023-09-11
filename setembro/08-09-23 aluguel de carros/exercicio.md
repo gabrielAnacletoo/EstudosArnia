@@ -25,29 +25,29 @@ Usuário {
 
 ## Funcionalidades
 
-1. *Cadastro de Usuário:*
+1. *Cadastro de Usuário:* ok
    - Um novo usuário se cadastra fornecendo um nome, um endereço de e-mail e uma senha.
    - Os dados do usuário são validados para garantir que o e-mail seja único.
    - Um registro do usuário é criado no banco de dados com as informações fornecidas.
 
-2. *Login de Usuário:*
+2. *Login de Usuário:* ok
    - Um usuário registrado insere seu endereço de e-mail e senha.
    - O sistema verifica se as credenciais estão corretas e autentica o usuário.
 
-3. *Busca de Concessionárias:*
+3. *Busca de Concessionárias:* ok
    - Os usuários podem pesquisar concessionárias com base em critérios como localização e datas de retirada e devolução do veículo.
    - O sistema retorna uma lista de concessionárias que atendem aos critérios de busca.
 
-4. *Aluguel de Carro:*
+4. *Aluguel de Carro:* ok
    - Os usuários podem fazer um aluguel de carro em uma concessionária selecionada.
    - Eles escolhem as datas de retirada e devolução do veículo.
    - O sistema verifica a disponibilidade de carros e confirma o aluguel se houver carros disponíveis.
    - O aluguel é registrado no banco de dados.
 
-5. *Visualização de Aluguéis do Usuário:*
+5. *Visualização de Aluguéis do Usuário:* ok
    - Os usuários podem visualizar seus aluguéis atuais.
    - As informações sobre cada aluguel, incluindo concessionária, datas e status, são exibidas.
 
-6. *Cancelamento de Aluguel:*
+6. *Cancelamento de Aluguel:* ok
    - Os usuários podem cancelar um aluguel existente antes da data de retirada.
    - O sistema atualiza o status do aluguel e disponibiliza os carros cancelados novamente para aluguéis futuros.

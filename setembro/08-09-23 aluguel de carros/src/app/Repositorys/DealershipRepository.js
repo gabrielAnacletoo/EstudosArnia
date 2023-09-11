@@ -1,6 +1,6 @@
 
 
-class HotelRepository {
+class DealershipRepository {
     constructor(model){
         this.model = model;
     }
@@ -8,9 +8,8 @@ class HotelRepository {
     async Create(data){
         return await this.model.create(data)
     }
-
     
-    async findHotelById(_id) {
+    async findDealershipById(_id) {
         return await this.model.findById(_id);
     }
 
@@ -24,4 +23,4 @@ class HotelRepository {
 
 }
 
-export { HotelRepository }
+export { DealershipRepository }

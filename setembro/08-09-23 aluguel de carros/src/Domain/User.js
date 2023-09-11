@@ -4,9 +4,9 @@ const UserSchema = new mongoose.Schema({
     name: {type: String, required: true},
     email: {type: String,  required: true, unique: true},
     password: {type: String,  required: true},
-    reserve: [{type: mongoose.Schema.Types.ObjectId, ref: "reserve"}],
+    rents: [{type: mongoose.Schema.Types.ObjectId, ref: "rents"}],
 }, {timestamps: true}) 
 
 
-const User = mongoose.model("User", UserSchema)
+const User = mongoose.model("userscars", UserSchema)
 export {User}

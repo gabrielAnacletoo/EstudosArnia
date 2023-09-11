@@ -5,12 +5,12 @@ import * as yup from 'yup'
 /*
 register validation
 */
-class HotelSchemaValidation{
+class DealershipSchemaValidation{
     static async isValid(data){
         const userSchema = yup.object().shape({
             name: yup.string().required(),
             address: yup.string().required(),
-            roomsavailable: yup.string().required()
+            carsAvailable: yup.string().required()
         })
 
         try {
@@ -22,4 +22,4 @@ class HotelSchemaValidation{
     }
 }
 
-export {HotelSchemaValidation}
+export {DealershipSchemaValidation}

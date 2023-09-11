@@ -43,7 +43,7 @@ class ReserveServices {
 
             // Verifique se o check-in é posterior ou igual à data atual
             const currentDate = moment()
-            if (checkinDate.isBefore(currentDate) || checkoutDate.year() > currentDate.year()) {
+            if (checkinDate.isSameOrAfter(currentDate) || checkoutDate.year() > currentDate.year()) {
                 const ReserveData = {
                     user: userIdString,
                     hotel: hotelId,

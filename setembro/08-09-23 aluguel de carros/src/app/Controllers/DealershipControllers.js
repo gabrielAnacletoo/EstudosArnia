@@ -1,19 +1,19 @@
-import { HotelSchemaValidation } from "../../Utils/validation/HotelSchema.js"
+import { DealershipSchemaValidation } from "../../Utils/validation/DealershipSchema.js"
 
 
 
-class HotelController {
+class DealerShipController {
   constructor(service) {
     this.service = service
   }
 
   async CreateController(req, res) {
     const { body } = req
-    const bodyIsValid = HotelSchemaValidation.isValid(body)
+    const bodyIsValid = DealershipSchemaValidation.isValid(body)
     if (bodyIsValid.error) {
       return res.status(400).json(bodyIsValid.error)
     }
-    const result = await this.service.newHotel(body)
+    const result = await this.service.NewDealership(body)
     return res.status(201).json(result)
   }
 
@@ -23,8 +23,7 @@ class HotelController {
   } 
   
   async findByLocation(req, res) {
-    const address = req.params.address; // Acesse o valor do endereço a partir dos parâmetros da rota
-    console.log(address)
+    const address = req.params.address; // Acessando o valor do endereço a partir dos parâmetros da rota
     const result = await this.service.findByLocation(address)
     if ('error' in result) {
       return res.status(404).json({ error: result.error });
@@ -34,9 +33,9 @@ class HotelController {
 
   async findById(req, res) {
     const id = req.params.id
-    const result = await this.service.findHotelById(id)
+    const result = await this.service.findByID(id)
     res.json(result)
   }
 }
 
-export { HotelController }
+export { DealerShipController }

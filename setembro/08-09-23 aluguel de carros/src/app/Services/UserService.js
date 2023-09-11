@@ -23,13 +23,13 @@ class UserService {
     }
 
 
-    async findByReserversByid(userId) {
-        const result = await this.repository.findByReserversByid(userId);
+    async findByRentByid(userId) {
+        const result = await this.repository.findByRentByid(userId);
         if (!result) {
             return { error: 'User has no bookings', status: 404 };
         }
 
-        return { message: "This user's bookings", reserves: result.reserves };
+        return { message: "This user's rents", rents: result.rents };
     }
 
 }

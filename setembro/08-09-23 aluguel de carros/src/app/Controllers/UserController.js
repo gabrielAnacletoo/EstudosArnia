@@ -28,9 +28,9 @@ class UserController {
     res.json(result)
   }
 
-  async findByReserversByid(req, res) {
+  async findByRentByid(req, res) {
     const id = req.params.id;
-    const result = await this.service.findByReserversByid(id);
+    const result = await this.service.findByRentByid(id);
     if('error' in result){
       return res.status(400).json(result.error)
     }
