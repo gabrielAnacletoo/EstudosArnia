@@ -106,7 +106,18 @@ export const info = {
             source: "https://github.com/gabrielAnacletoo/ProjetoFinalModulo1", // this should be a link to the **repository** of the project, where the code is hosted.
             image: mock1
         },
-        
+        {
+            title: "W3ERP",
+            live: "https://projetow3erp.vercel.app/",
+            source: "https://github.com/gabrielAnacletoo/projetow3erp",
+            image: mock2
+        },
+        {
+            title: "API de Hotel",
+            live: "#",
+            source: "https://github.com/gabrielAnacletoo/EstudosArnia/tree/main/setembro/05-09-23%20Hotel/src",
+            image: mock3
+        },
         // {
         //     title: "Project 4",
         //     live: "https://paytonpierce.dev",
