@@ -113,6 +113,12 @@ export const info = {
             image: mock2
         },
         {
+            title: "W3ERP",
+            live: "https://projetow3erp.vercel.app/",
+            source: "https://github.com/gabrielAnacletoo/projetow3erp",
+            image: mock2
+        },
+        {
             title: "API de Hotel",
             live: "#",
             source: "https://github.com/gabrielAnacletoo/EstudosArnia/tree/main/setembro/05-09-23%20Hotel/src",
