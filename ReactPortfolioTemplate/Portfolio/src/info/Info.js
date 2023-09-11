@@ -116,7 +116,7 @@ export const info = {
             title: "API de Hotel",
             live: "#",
             source: "https://github.com/gabrielAnacletoo/EstudosArnia/tree/main/setembro/05-09-23%20Hotel/src",
-            image: mock3
+            image: mock2
         },
         // {
         //     title: "Project 4",
