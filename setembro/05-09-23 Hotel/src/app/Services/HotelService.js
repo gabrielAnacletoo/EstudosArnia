@@ -6,7 +6,11 @@ class HotelServices {
 
     
     async newHotel(data){
-        return await this.repository.Create(data)
+        const result = await this.repository.Create(data)
+        if(!result){
+            return {error: 'Failure to create hotel', status: 400}
+        }
+        return result;
      }
 
 
@@ -15,7 +19,11 @@ class HotelServices {
     }
 
     async findByID(id){
-        return await this.repository.findById(id);
+       const result = await this.repository.findHotelById(id);
+    if(!result){
+        return {error: 'Hotel not found', status: 404}
+    }
+    return result;
     }
     
     async findByLocation(address){
