@@ -31,7 +31,7 @@ With this API, you can:
 
 1. Clone the repository:
 
-   git clone https://github.com/your-username/repo-name.git
+   git clone https://github.com/your-username/repo-name.git <br />
    cd repo-name 
 
 
