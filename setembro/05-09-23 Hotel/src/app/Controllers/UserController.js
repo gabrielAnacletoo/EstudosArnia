@@ -28,6 +28,12 @@ class UserController {
     res.json(result)
   }
 
+  async FindById(req, res) {
+    const id = req.params.id;
+    const result = await this.service.FindById(id)
+    res.json(result)
+  }
+
   async findByReserversByid(req, res) {
     const id = req.params.id;
     const result = await this.service.findByReserversByid(id);

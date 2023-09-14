@@ -1,7 +1,9 @@
+import { Model } from 'mongoose';
 
+import { ClinicDocument } from '../../../Domain/Clinic';
 
 class ClinicRepository {
-    constructor(private model: any){}
+    constructor(private model: Model<ClinicDocument>){}
 
     async FindByEmail(email: string) {
         return await this.model.findOne({ email })
@@ -13,6 +15,7 @@ class ClinicRepository {
 
     async Create(data: any) {
         return await this.model.create(data)
+      
     }
 
     async FindAll(){

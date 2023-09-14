@@ -1,8 +1,10 @@
 import { DoctorchemaValidation } from '../../../Utils/Validations/DoctorSchemaValidation';
 import { Request, Response } from 'express';
+import { ClinicService } from '../Service/ClinicService';
+
 
 class ClinicController {
-  constructor(private service: any) {}
+  constructor(private service: ClinicService) {}
 
   async CreateController(req: Request, res: Response) {
     const { body } = req;

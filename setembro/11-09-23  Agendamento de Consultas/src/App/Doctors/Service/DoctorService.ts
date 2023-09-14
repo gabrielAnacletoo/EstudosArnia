@@ -1,20 +1,14 @@
 import { Crypt } from "../../../Utils/Crypt";
-
+import { DoctorRepository } from "../Repository/DoctorRepository";
 
 
 class DoctorService {
-  
-    constructor(private repository: any) {}
 
-    async CreateService(data: any) {
-    const userAlreadyExists = await this.repository.FindByEmail(data.email)
-    if(userAlreadyExists){
-        return { error: 'Doctor Already Exists', status: 400 }
+    constructor(private repository: DoctorRepository) { }
+
+    async CreateService(data: DoctorData) {
+        return await this.repository.Create(data)
     }
-    return await this.repository.Create(data)
-}
-
-
     async FindAll() {
         return await this.repository.FindAll();
     }

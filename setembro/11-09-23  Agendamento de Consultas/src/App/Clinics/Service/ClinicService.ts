@@ -1,10 +1,10 @@
 import { Crypt } from "../../../Utils/Crypt";
-
+import { ClinicRepository } from "../Repository/ClinicRepository";
 
 
 class ClinicService {
   
-    constructor(private repository: any) {}
+    constructor(private repository: ClinicRepository) {}
 
     async CreateService(data: any) {
     return await this.repository.Create(data)

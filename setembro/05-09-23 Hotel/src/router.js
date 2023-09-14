@@ -18,6 +18,8 @@ router.post("/register", userController.CreateController.bind(userController))
 
 //register hotel
 router.post("/hotel", HotelsController.CreateController.bind(HotelsController))
+//teste
+router.get("/allusers/:id", userController.FindById.bind(userController))
 
 //login with authentication
 router.post("/login", authController.LoginController.bind(authController))

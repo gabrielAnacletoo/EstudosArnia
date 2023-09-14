@@ -1,14 +1,6 @@
-import {Schema, Types, model } from 'mongoose'
+import { Schema, model, InferSchemaType } from 'mongoose';
 
 
-
-interface clinicType {
-    name: string;
-    location: string
-    specializations: string[];
-    doctorsAvailable: number;
-}
-//user deve ter ref ao appointment
 const ClinicSchema = new Schema({
     name: {type: String ,required: true},
     location: {type: String, required: true},
@@ -16,5 +8,7 @@ const ClinicSchema = new Schema({
     doctorsAvailable: {type: Number},
 },{timestamps: true})
 
+type ClinicDocument  = InferSchemaType<typeof ClinicSchema>
+
 const Clinic = model("clinics", ClinicSchema);
-export {Clinic}
+export { Clinic, ClinicDocument}

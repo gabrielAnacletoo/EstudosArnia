@@ -1,10 +1,10 @@
 import { Crypt } from "../../../Utils/Crypt";
-
+import { UserRepository } from "../Repository/UserRepository";
 
 
 class UserService {
   
-    constructor(private repository: any) {}
+    constructor(private repository: UserRepository) {}
 
     async CreateService(data: any) {
     const userAlreadyExists = await this.repository.FindByEmail(data.email)

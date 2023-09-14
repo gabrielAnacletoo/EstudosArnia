@@ -1,27 +1,17 @@
-interface UserType {
-    name: string;
-    email: string;
-    password: string;
+interface AppointmentData {
+    appointmentdate: string
+    appointmenttime: string
+    token: string
+    ClinicId: string
+    DoctorId: string
 }
 
-interface ErrorType {
-    error: string
-    status: number
+interface DoctorData {
+ name: string
+ specialty: string
+ availabletimes: []
+ _id: string
+ createdAt: NativeDate
+ updatedAt: NativeDate
+ 
 }
-
-interface UserRepository {
-    FindById(id: string): Promise<UserType | null>;
-    FindByEmail(email: string): Promise<UserType | null>;
-    Create(data: UserType): Promise<UserType | null>;
-    FindAll(): Promise<UserType[]>;
-}
-
-interface UserService {
-    FindAll(): Promise<UserType[]>;
-    CreateService(data: UserType): Promise<UserType | null>;
-}
-
-interface ErrorResponse {
-    error: string;
-    status: number;
-  }

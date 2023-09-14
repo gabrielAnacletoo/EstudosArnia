@@ -1,8 +1,8 @@
 import { UserSchemaValidation } from "../../../Utils/Validations/UserSchemaValidation";
 import { Request, Response } from 'express';
-
+import { UserService } from "../Service/UserService";
 class UserController {
-  constructor(private service: any) {}
+  constructor(private service: UserService) {}
 
   async CreateController(req: Request, res: Response) {
     const { body } = req;

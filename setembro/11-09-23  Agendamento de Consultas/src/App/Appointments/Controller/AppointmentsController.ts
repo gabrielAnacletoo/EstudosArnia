@@ -1,32 +1,30 @@
-import { UserSchemaValidation } from "../../../Utils/Validations/UserSchemaValidation";
+import { AppointmentService } from '../Service/AppointmentsService';
 import { Request, Response } from 'express';
 
 class AppointmentController {
-  constructor(private service: any) {}
+  constructor(private service: AppointmentService) {}
 
   async CreateController(req: Request, res: Response) {
-    const { body } = req;
-    let result; 
-
-    try {
-      const bodyIsValid = await UserSchemaValidation.isValid(body);
-      if (bodyIsValid.error) {
-        return res.status(400).json(bodyIsValid.error);
-      }
-      result = await this.service.CreateService(body);
-      return res.status(201).json(result); 
-    } catch (error) {
-      if (result && 'message' in result) {
-        return res.status(404).json(result);
-      }
-      return res.status(500).json({ error: 'Internal Server Error' });
+    const { appointmentdate, appointmenttime, ClinicId, DoctorId } = req.body
+    const token = req.headers.authorization;
+    if(!token){
+      return {error: 'Token not found', status: 401}
     }
+    const Appointment = {
+      appointmentdate,
+      appointmenttime,
+      token,
+      ClinicId,
+      DoctorId
+    }
+    const result = await this.service.CreateAppontment(Appointment);
+    return res.status(201).json(result);
   }
 
-  async findAll(req: Request, res: Response) {
-    const result = await this.service.FindAll();
-    res.json(result);
-  }
+  // async findAll(req: Request, res: Response) {
+  //   const result = await this.service.FindAll();
+  //   res.json(result);
+  // }
 }
 
 export { AppointmentController };

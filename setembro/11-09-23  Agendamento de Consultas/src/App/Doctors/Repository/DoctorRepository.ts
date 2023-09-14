@@ -1,7 +1,8 @@
-
+import { Model } from 'mongoose';
+import { DoctorDocument } from '../../../Domain/Doctor';
 
 class DoctorRepository {
-    constructor(private model: any){}
+    constructor(private model: Model<DoctorDocument>){}
 
     async FindByEmail(email: string) {
         return await this.model.findOne({ email })
@@ -11,7 +12,7 @@ class DoctorRepository {
         return await this.model.findById(id)
     }
 
-    async Create(data: any) {
+    async Create(data: DoctorDocument) {
         return await this.model.create(data)
     }
 

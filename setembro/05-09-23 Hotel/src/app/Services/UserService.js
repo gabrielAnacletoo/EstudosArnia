@@ -21,6 +21,9 @@ class UserService {
     async findAll() {
         return await this.repository.findAll();
     }
+    async FindById(id) {
+        return await this.repository.FindById(id);
+    }
 
 
     async findByReserversByid(userId) {

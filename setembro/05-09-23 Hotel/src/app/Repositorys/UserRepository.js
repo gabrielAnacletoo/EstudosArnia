@@ -8,8 +8,9 @@ class UserRepository {
         return this.user.findOne({ email })
     }
 
-    async findById(_id) {
-        return this.user.findById(_id)
+    async FindById(_id) {
+        const result = this.user.findOne({_id});
+        return result;
     }
 
     async create(data) {
