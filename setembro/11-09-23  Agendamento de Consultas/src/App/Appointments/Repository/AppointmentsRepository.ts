@@ -12,9 +12,8 @@ class AppointmentRepository {
         return await this.model.findById(id)
     }
 
-    async Create(data: any) {
-        const createdAppointment = await this.model.create(data);
-        return createdAppointment._id; // Retorna apenas o _id 
+    async Create(data: CreateAppointment) {
+        return await this.model.create(data);
     }
 
     async FindAll(){

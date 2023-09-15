@@ -16,8 +16,14 @@ class ClinicController {
       return res.status(201).json(result); 
   }
 
-  async findAll(req: Request, res: Response) {
+  async FindAll(req: Request, res: Response) {
     const result = await this.service.FindAll();
+    res.json(result);
+  }
+
+  async FindById(req: Request, res: Response) {
+    const id = req.params.id;
+    const result = await this.service.FindById(id);
     res.json(result);
   }
 }

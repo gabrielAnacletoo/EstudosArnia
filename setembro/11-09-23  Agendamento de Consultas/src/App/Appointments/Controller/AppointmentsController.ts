@@ -17,14 +17,10 @@ class AppointmentController {
       ClinicId,
       DoctorId
     }
-    const result = await this.service.CreateAppontment(Appointment);
+    const result = await this.service.CreateAppointment(Appointment);
     return res.status(201).json(result);
   }
 
-  // async findAll(req: Request, res: Response) {
-  //   const result = await this.service.FindAll();
-  //   res.json(result);
-  // }
 }
 
 export { AppointmentController };

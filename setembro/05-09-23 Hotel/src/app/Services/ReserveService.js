@@ -9,7 +9,7 @@ class ReserveServices {
     }
 
     async createReserve(reserve) {
-        const { checkin, checkout, status, token, hotelId } = reserve;
+        const { checkin, checkout, token, hotelId } = reserve;
         const [, tokenNovo] = token.split(" ");
         const decoded = JWT.decode(tokenNovo);
         const { _id, email } = decoded._doc;

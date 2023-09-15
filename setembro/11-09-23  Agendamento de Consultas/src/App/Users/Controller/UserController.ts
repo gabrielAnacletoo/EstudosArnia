@@ -23,8 +23,14 @@ class UserController {
     }
   }
 
-  async findAll(req: Request, res: Response) {
+  async FindAll(req: Request, res: Response) {
     const result = await this.service.FindAll();
+    res.json(result);
+  }
+
+  async FindAppointment(req: Request, res: Response) {
+    const id = req.params.id; 
+    const result = await this.service.FindAppointment(id);
     res.json(result);
   }
 }

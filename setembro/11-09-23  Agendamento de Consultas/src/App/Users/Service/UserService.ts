@@ -6,7 +6,7 @@ class UserService {
   
     constructor(private repository: UserRepository) {}
 
-    async CreateService(data: any) {
+    async CreateService(data: UserData) {
     const userAlreadyExists = await this.repository.FindByEmail(data.email)
     if(userAlreadyExists){
         return { error: 'User Already Exists', status: 400 }
@@ -22,14 +22,16 @@ class UserService {
     }
 
 
-    // async findByReserversByid(userId) {
-    //     const result = await this.repository.findByReserversByid(userId);
-    //     if (!result) {
-    //         return { error: 'User has no bookings', status: 404 };
-    //     }
-
-    //     return { message: "This user's bookings", reserves: result.reserves };
-    // }
+    async FindAppointment(userId: string) {
+        const result = await this.repository.FindAppointment(userId);
+  
+        if (!result) {
+            return { error: 'User has no appointment', status: 404 };
+        }
+     
+        return { message: "This user's Appointments", Appointments: result.Appointments };
+    
+    }
 
 }
 export { UserService }

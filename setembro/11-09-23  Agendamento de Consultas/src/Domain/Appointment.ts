@@ -6,7 +6,7 @@ const AppointmentSchema = new Schema({
     doctor: { type: Schema.Types.ObjectId, ref: 'doctors' },
     appointmentdate: { type: Date, required: true },
     appointmenttime: { type: String, required: true},
-    status: {type: String, enum: ["Agendada", "Cancelada", null], default: null }
+    status: {type: String, enum: ["Agendada", "Cancelada"] }
 },{timestamps: true})
 
 type AppointmentDocument  = InferSchemaType<typeof AppointmentSchema>

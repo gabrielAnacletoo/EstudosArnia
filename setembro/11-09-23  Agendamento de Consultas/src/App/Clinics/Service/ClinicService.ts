@@ -14,6 +14,10 @@ class ClinicService {
     }
 
 
+    async FindById(id: string) {
+        return await this.repository.FindById(id);
+    }
+
     // async findByReserversByid(userId) {
     //     const result = await this.repository.findByReserversByid(userId);
     //     if (!result) {

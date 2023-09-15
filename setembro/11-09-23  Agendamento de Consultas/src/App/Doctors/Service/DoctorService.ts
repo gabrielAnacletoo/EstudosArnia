@@ -13,7 +13,9 @@ class DoctorService {
         return await this.repository.FindAll();
     }
 
-
+    async FindById(id: string) {
+        return await this.repository.FindById(id);
+    }
     // async findByReserversByid(userId) {
     //     const result = await this.repository.findByReserversByid(userId);
     //     if (!result) {

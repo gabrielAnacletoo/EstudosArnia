@@ -2,7 +2,7 @@ import * as yup from 'yup'
 
 
 class AuthSchemaValidation {
-    static async isValid(data){
+    static async isValid(data:AuthData){
         const authSchema = yup.object().shape({
             email: yup.string().email().required(),
             password: yup.string().required()
