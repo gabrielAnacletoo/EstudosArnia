@@ -21,6 +21,7 @@ class AuthService {
                 return { error: 'Email or password invalid', status: 401 }
             }
 
+          
             // Gerar token
             const payload = { ...userAlreadyExists }
             const secretKey = process.env.JWT_SECRET_KEY as string

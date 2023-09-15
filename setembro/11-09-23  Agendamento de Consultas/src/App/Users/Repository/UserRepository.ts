@@ -4,11 +4,12 @@ import { makeError } from '../../../Utils/makeError';
 
 
 class UserRepository {
-    constructor(private model: Model<UserDocument>) {}
+    constructor(private model: any) {}
 
     async FindByEmail(email: string) {
         try {
-            return await this.model.findOne({ email }).select("+password")
+            //return await this.model.findOne({ email }).select("+password")
+            return await this.model.findOne({ email })
         } catch (error: any) {
             return makeError(error.message, 500)
         }

@@ -10,7 +10,7 @@ const DoctorController = MakeDoctor.getInstance()
 const ClinicController = MakeClinic.getInstance()
 const AppointmentController = MakeAppointment.getInstance()
 const AuthController = MakeAuth.getInstance()
-import { AuthMiddleware } from "./App/Middlewares/AuthMiddleware";
+import { AuthMiddleware } from "./Middlewares/AuthMiddleware";
 
 //list all
 router.get("/list/users", userController.FindAll.bind(userController))
