@@ -26,6 +26,12 @@ class ClinicController {
     const result = await this.service.FindById(id);
     res.json(result);
   }
+
+  async FindByLocation(req: Request, res: Response) {
+    const location = req.params.location;
+    const result = await this.service.FindByLocation(location);
+    res.json(result);
+  }
 }
 
 export { ClinicController };

@@ -22,14 +22,11 @@ class DoctorService {
     async FindById(id: string) {
         return await this.repository.FindById(id);
     }
-    // async findByReserversByid(userId) {
-    //     const result = await this.repository.findByReserversByid(userId);
-    //     if (!result) {
-    //         return { error: 'User has no bookings', status: 404 };
-    //     }
 
-    //     return { message: "This user's bookings", reserves: result.reserves };
-    // }
+    async FindBySpecialty(specialty: string) {
+        return await this.repository.FindBySpecialty(specialty);
+    }
+
 
 }
 export { DoctorService }

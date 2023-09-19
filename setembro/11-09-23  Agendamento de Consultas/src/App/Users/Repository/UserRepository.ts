@@ -4,12 +4,12 @@ import { makeError } from '../../../Utils/makeError';
 
 
 class UserRepository {
-    constructor(private model: any) {}
+    constructor(private model: Model<UserDocument>) {}
 
     async FindByEmail(email: string) {
         try {
             //return await this.model.findOne({ email }).select("+password")
-            return await this.model.findOne({ email })
+            return await this.model.findOne({ email }).select("+password")
         } catch (error: any) {
             return makeError(error.message, 500)
         }
@@ -27,8 +27,14 @@ class UserRepository {
         return await this.model.find();
     }
 
+    async CreateAppointment(id: string, data: UpdateUser){
+       return await this.model.findOneAndUpdate(
+        {_id: id },
+        { $push: { appointment: data }},
+        {new: true}
+       )
 
-
+    } 
     async FindAppointment(userId: string) {
         const user = await this.model.findOne({_id: userId}).populate({
             path: 'appointment',

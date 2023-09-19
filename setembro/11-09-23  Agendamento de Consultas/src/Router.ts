@@ -32,6 +32,8 @@ router.use(AuthMiddleware.handler)
 //Services
 router.post("/register/appointment", AppointmentController.CreateController.bind(AppointmentController)) 
 
-router.get("/search/clinics/:id", ClinicController.FindById.bind(ClinicController))
-router.get("/search/doctors/:id", DoctorController.FindById.bind(DoctorController))
+//search
+router.get("/doctors/:specialty", DoctorController.FindBySpecialty.bind(DoctorController))
+router.get("/clinics/:location", ClinicController.FindByLocation.bind(ClinicController))
+// router.get("/doctors/:id", DoctorController.FindById.bind(DoctorController))
 export { router }

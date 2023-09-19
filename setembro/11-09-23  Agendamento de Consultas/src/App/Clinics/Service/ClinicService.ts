@@ -18,14 +18,9 @@ class ClinicService {
         return await this.repository.FindById(id);
     }
 
-    // async findByReserversByid(userId) {
-    //     const result = await this.repository.findByReserversByid(userId);
-    //     if (!result) {
-    //         return { error: 'User has no bookings', status: 404 };
-    //     }
-
-    //     return { message: "This user's bookings", reserves: result.reserves };
-    // }
+    async FindByLocation(location: string) {
+        return await this.repository.FindByLocation(location);
+    }
 
 }
 export { ClinicService }

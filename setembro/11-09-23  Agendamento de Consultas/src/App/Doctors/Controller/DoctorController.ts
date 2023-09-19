@@ -34,6 +34,12 @@ class DoctorController {
     const result = await this.service.FindById(id);
     res.json(result);
   }
+
+  async FindBySpecialty(req: Request, res: Response) {
+    const specialty = req.params.specialty;
+    const result = await this.service.FindBySpecialty(specialty);
+    res.json(result);
+  }
 }
 
 export { DoctorController };

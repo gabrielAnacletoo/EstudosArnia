@@ -15,6 +15,7 @@ class AppointmentRepository {
     async Create(data: CreateAppointment) {
         return await this.model.create(data);
     }
+    
 
     async FindAll(){
         return await this.model.find();

@@ -6,7 +6,7 @@ class UserService {
   
     constructor(private repository: UserRepository) {}
 
-    async CreateService(data: any) {
+    async CreateService(data: UserData) {
     const userAlreadyExists = await this.repository.FindByEmail(data.email)
     if(userAlreadyExists){
         return { error: 'User Already Exists', status: 400 }

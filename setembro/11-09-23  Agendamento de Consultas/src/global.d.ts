@@ -38,7 +38,17 @@ interface UserData{
 interface CreateAppointment{
     user: string,
     doctor: string,
+    clinic: string,
     appointmentdate: moment.Moment,
     appointmenttime: string,
     status: string
+}
+
+interface UpdateUser {
+        user: Types.ObjectId; // O tipo deve ser ObjectId, que é o tipo padrão para referências no Mongoose
+        doctor: Types.ObjectId;
+        clinic: Types.ObjectId;
+        appointmentdate: Date; // Use Date em vez de moment.Moment
+        appointmenttime: string;
+        status: string;
 }

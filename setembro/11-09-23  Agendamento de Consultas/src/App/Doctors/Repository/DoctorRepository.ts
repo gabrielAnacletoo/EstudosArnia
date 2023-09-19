@@ -12,6 +12,18 @@ class DoctorRepository {
         return await this.model.findById(id)
     }
 
+    async UpdateAvailableTimes(doctorId: string, hourToRemove: string) {
+        return await this.model.findOneAndUpdate(
+            {_id: doctorId },
+            { $pull: { availabletimes: hourToRemove }},
+            {new: true}
+           )
+    }
+
+    async FindBySpecialty(specialty: string) {
+        return await this.model.findOne({specialty})
+    }
+
     async FindByName(name: string) {
         return await this.model.findOne({name})
     }
