@@ -1,0 +1,14 @@
+C:\Users\gabriel\Desktop\EstudosArnia\Setembro\DotNEt\aula01\bin\Debug\net7.0\aula01.exe
+C:\Users\gabriel\Desktop\EstudosArnia\Setembro\DotNEt\aula01\bin\Debug\net7.0\aula01.deps.json
+C:\Users\gabriel\Desktop\EstudosArnia\Setembro\DotNEt\aula01\bin\Debug\net7.0\aula01.runtimeconfig.json
+C:\Users\gabriel\Desktop\EstudosArnia\Setembro\DotNEt\aula01\bin\Debug\net7.0\aula01.dll
+C:\Users\gabriel\Desktop\EstudosArnia\Setembro\DotNEt\aula01\bin\Debug\net7.0\aula01.pdb
+C:\Users\gabriel\Desktop\EstudosArnia\Setembro\DotNEt\aula01\obj\Debug\net7.0\aula01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabriel\Desktop\EstudosArnia\Setembro\DotNEt\aula01\obj\Debug\net7.0\aula01.AssemblyInfoInputs.cache
+C:\Users\gabriel\Desktop\EstudosArnia\Setembro\DotNEt\aula01\obj\Debug\net7.0\aula01.AssemblyInfo.cs
+C:\Users\gabriel\Desktop\EstudosArnia\Setembro\DotNEt\aula01\obj\Debug\net7.0\aula01.csproj.CoreCompileInputs.cache
+C:\Users\gabriel\Desktop\EstudosArnia\Setembro\DotNEt\aula01\obj\Debug\net7.0\aula01.dll
+C:\Users\gabriel\Desktop\EstudosArnia\Setembro\DotNEt\aula01\obj\Debug\net7.0\refint\aula01.dll
+C:\Users\gabriel\Desktop\EstudosArnia\Setembro\DotNEt\aula01\obj\Debug\net7.0\aula01.pdb
+C:\Users\gabriel\Desktop\EstudosArnia\Setembro\DotNEt\aula01\obj\Debug\net7.0\aula01.genruntimeconfig.cache
+C:\Users\gabriel\Desktop\EstudosArnia\Setembro\DotNEt\aula01\obj\Debug\net7.0\ref\aula01.dll

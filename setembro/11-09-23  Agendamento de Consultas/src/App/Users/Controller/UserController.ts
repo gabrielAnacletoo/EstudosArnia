@@ -1,6 +1,8 @@
 import { UserSchemaValidation } from "../../../Utils/Validations/UserSchemaValidation";
 import { Request, Response } from 'express';
 import { UserService } from "../Service/UserService";
+
+
 class UserController {
   constructor(private service: UserService) {}
 

@@ -35,6 +35,7 @@ instala o types do express
 
   instalar projeto com TYPESCRIPT
   npm i typescript tsx dotenv tsup vitest -D
+  npm i express mongoose multer
   depois
   npx tsc --init 
   npm run build declara o tsup como build
@@ -42,7 +43,7 @@ instala o types do express
   "start:dev": "tsx src/index.ts",
   "start": "node dist/index.js"
   "build": "tsup src",
-  "test": ""
+  "test": "vitest"
 
 
 Para configurar o TypeScript e o Babel em uma API Node.js, você pode seguir os seguintes passos:
@@ -84,8 +85,8 @@ Para configurar o TypeScript e o Babel em uma API Node.js, você pode seguir os 
    ```json
    {
      "scripts": {
-         "start": "tsx src/index.ts",
-         "start:dev": "tsx watch src/index.ts",
+         "start": "tsx src/app.ts",
+         "start:dev": "tsx watch src/app.ts",
          "build": "tsup src",
          "test": "vitest"
       },
