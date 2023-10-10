@@ -68,7 +68,7 @@ export const info = {
 // Just change the links so that they lead to your social profiles.
 
     ],
-    bio: "Hello, my name is Gabriel. I'm a front-end developer. I studied 1 year of full stack development at Arnia.com.br, I like music, drawing and I believe that artificial intelligence will inevitably dominate all of us one day. You should hire me!",
+    bio: "Hello, my name is Gabriel. I'm a full-stack developer. I studied 1 year of full stack development at Arnia.com.br, I like music, drawing and I believe that artificial intelligence will inevitably dominate all of us one day. You should hire me!",
     skills:
         {
             proficientWith: ['Node.JS', 'MongoDB', 'Mongoose','javascript', 'Typescript', 'react', 'git', 'github', 'bootstrap', 'html5', 'css3', 'React Hooks', 'Styled components'],
