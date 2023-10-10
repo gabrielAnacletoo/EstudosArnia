@@ -41,7 +41,7 @@ export const info = {
         },
         {
             emoji: "💼",
-            text: "Developer front-end"
+            text: "Developer Full-stack"
         },
         {
             emoji: "📧",
