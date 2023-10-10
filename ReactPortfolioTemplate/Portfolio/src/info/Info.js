@@ -118,12 +118,12 @@ export const info = {
             source: "https://github.com/gabrielAnacletoo/EstudosArnia/tree/main/setembro/05-09-23%20Hotel/src",
             image: mock3
         },
-        // {
-        //     title: "Project 4",
-        //     live: "https://paytonpierce.dev",
-        //     source: "https://github.com/paytonjewell",
-        //     image: mock4
-        // },
+        {
+            title: "APi Vagas de emprego",
+            live: "https://github.com/gabrielAnacletoo/ProjetoModulo3",
+            source: "https://github.com/gabrielAnacletoo/ProjetoModulo3",
+            image: mock3
+        },
         // {
         //     title: "Project 5",
         //     live: "https://paytonpierce.dev",
