@@ -1,0 +1,14 @@
+C:\Users\gabriel\source\repos\Projetoconsole1\Projetoconsole1\obj\Debug\net6.0\Projetoconsole1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabriel\source\repos\Projetoconsole1\Projetoconsole1\obj\Debug\net6.0\Projetoconsole1.AssemblyInfoInputs.cache
+C:\Users\gabriel\source\repos\Projetoconsole1\Projetoconsole1\obj\Debug\net6.0\Projetoconsole1.AssemblyInfo.cs
+C:\Users\gabriel\source\repos\Projetoconsole1\Projetoconsole1\obj\Debug\net6.0\Projetoconsole1.csproj.CoreCompileInputs.cache
+C:\Users\gabriel\source\repos\Projetoconsole1\Projetoconsole1\bin\Debug\net6.0\Projetoconsole1.exe
+C:\Users\gabriel\source\repos\Projetoconsole1\Projetoconsole1\bin\Debug\net6.0\Projetoconsole1.deps.json
+C:\Users\gabriel\source\repos\Projetoconsole1\Projetoconsole1\bin\Debug\net6.0\Projetoconsole1.runtimeconfig.json
+C:\Users\gabriel\source\repos\Projetoconsole1\Projetoconsole1\bin\Debug\net6.0\Projetoconsole1.dll
+C:\Users\gabriel\source\repos\Projetoconsole1\Projetoconsole1\bin\Debug\net6.0\Projetoconsole1.pdb
+C:\Users\gabriel\source\repos\Projetoconsole1\Projetoconsole1\obj\Debug\net6.0\Projetoconsole1.dll
+C:\Users\gabriel\source\repos\Projetoconsole1\Projetoconsole1\obj\Debug\net6.0\refint\Projetoconsole1.dll
+C:\Users\gabriel\source\repos\Projetoconsole1\Projetoconsole1\obj\Debug\net6.0\Projetoconsole1.pdb
+C:\Users\gabriel\source\repos\Projetoconsole1\Projetoconsole1\obj\Debug\net6.0\Projetoconsole1.genruntimeconfig.cache
+C:\Users\gabriel\source\repos\Projetoconsole1\Projetoconsole1\obj\Debug\net6.0\ref\Projetoconsole1.dll

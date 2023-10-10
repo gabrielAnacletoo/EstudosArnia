@@ -1,0 +1,14 @@
+C:\Users\gabriel\Desktop\EstudosArnia\Setembro\C#\TrabalhandoComArrays\TrabalhandoComArrays\obj\Debug\net6.0\TrabalhandoComArrays.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabriel\Desktop\EstudosArnia\Setembro\C#\TrabalhandoComArrays\TrabalhandoComArrays\obj\Debug\net6.0\TrabalhandoComArrays.AssemblyInfoInputs.cache
+C:\Users\gabriel\Desktop\EstudosArnia\Setembro\C#\TrabalhandoComArrays\TrabalhandoComArrays\obj\Debug\net6.0\TrabalhandoComArrays.AssemblyInfo.cs
+C:\Users\gabriel\Desktop\EstudosArnia\Setembro\C#\TrabalhandoComArrays\TrabalhandoComArrays\obj\Debug\net6.0\TrabalhandoComArrays.csproj.CoreCompileInputs.cache
+C:\Users\gabriel\Desktop\EstudosArnia\Setembro\C#\TrabalhandoComArrays\TrabalhandoComArrays\bin\Debug\net6.0\TrabalhandoComArrays.exe
+C:\Users\gabriel\Desktop\EstudosArnia\Setembro\C#\TrabalhandoComArrays\TrabalhandoComArrays\bin\Debug\net6.0\TrabalhandoComArrays.deps.json
+C:\Users\gabriel\Desktop\EstudosArnia\Setembro\C#\TrabalhandoComArrays\TrabalhandoComArrays\bin\Debug\net6.0\TrabalhandoComArrays.runtimeconfig.json
+C:\Users\gabriel\Desktop\EstudosArnia\Setembro\C#\TrabalhandoComArrays\TrabalhandoComArrays\bin\Debug\net6.0\TrabalhandoComArrays.dll
+C:\Users\gabriel\Desktop\EstudosArnia\Setembro\C#\TrabalhandoComArrays\TrabalhandoComArrays\bin\Debug\net6.0\TrabalhandoComArrays.pdb
+C:\Users\gabriel\Desktop\EstudosArnia\Setembro\C#\TrabalhandoComArrays\TrabalhandoComArrays\obj\Debug\net6.0\TrabalhandoComArrays.dll
+C:\Users\gabriel\Desktop\EstudosArnia\Setembro\C#\TrabalhandoComArrays\TrabalhandoComArrays\obj\Debug\net6.0\refint\TrabalhandoComArrays.dll
+C:\Users\gabriel\Desktop\EstudosArnia\Setembro\C#\TrabalhandoComArrays\TrabalhandoComArrays\obj\Debug\net6.0\TrabalhandoComArrays.pdb
+C:\Users\gabriel\Desktop\EstudosArnia\Setembro\C#\TrabalhandoComArrays\TrabalhandoComArrays\obj\Debug\net6.0\TrabalhandoComArrays.genruntimeconfig.cache
+C:\Users\gabriel\Desktop\EstudosArnia\Setembro\C#\TrabalhandoComArrays\TrabalhandoComArrays\obj\Debug\net6.0\ref\TrabalhandoComArrays.dll
