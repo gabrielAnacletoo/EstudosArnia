@@ -1,0 +1,14 @@
+C:\Users\gabriel\Desktop\EstudosArnia\Outubro\C#\aulaUm\bin\Debug\net7.0\aulaUm.exe
+C:\Users\gabriel\Desktop\EstudosArnia\Outubro\C#\aulaUm\bin\Debug\net7.0\aulaUm.deps.json
+C:\Users\gabriel\Desktop\EstudosArnia\Outubro\C#\aulaUm\bin\Debug\net7.0\aulaUm.runtimeconfig.json
+C:\Users\gabriel\Desktop\EstudosArnia\Outubro\C#\aulaUm\bin\Debug\net7.0\aulaUm.dll
+C:\Users\gabriel\Desktop\EstudosArnia\Outubro\C#\aulaUm\bin\Debug\net7.0\aulaUm.pdb
+C:\Users\gabriel\Desktop\EstudosArnia\Outubro\C#\aulaUm\obj\Debug\net7.0\aulaUm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabriel\Desktop\EstudosArnia\Outubro\C#\aulaUm\obj\Debug\net7.0\aulaUm.AssemblyInfoInputs.cache
+C:\Users\gabriel\Desktop\EstudosArnia\Outubro\C#\aulaUm\obj\Debug\net7.0\aulaUm.AssemblyInfo.cs
+C:\Users\gabriel\Desktop\EstudosArnia\Outubro\C#\aulaUm\obj\Debug\net7.0\aulaUm.csproj.CoreCompileInputs.cache
+C:\Users\gabriel\Desktop\EstudosArnia\Outubro\C#\aulaUm\obj\Debug\net7.0\aulaUm.dll
+C:\Users\gabriel\Desktop\EstudosArnia\Outubro\C#\aulaUm\obj\Debug\net7.0\refint\aulaUm.dll
+C:\Users\gabriel\Desktop\EstudosArnia\Outubro\C#\aulaUm\obj\Debug\net7.0\aulaUm.pdb
+C:\Users\gabriel\Desktop\EstudosArnia\Outubro\C#\aulaUm\obj\Debug\net7.0\aulaUm.genruntimeconfig.cache
+C:\Users\gabriel\Desktop\EstudosArnia\Outubro\C#\aulaUm\obj\Debug\net7.0\ref\aulaUm.dll
